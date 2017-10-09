@@ -3,32 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link href="styles/home.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
-
+    <link href="styles/material.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <script defer src="scripts/material.js"></script>
     <title>FELOY | HOME</title>
 </head>
-<body>
-<div class="main-wrapper">
+<body class="index-body">
+<div class="mdl-layout mdl-js-layout">
+    <header class="main-header mdl-layout__header mdl-layout__header--transparent mdl-shadow--4dp">
+        <div class="mdl-layout__header-row">
+            <div class="row-wrapper">
+                <span class="mdl-layout-title">FELOY</span>
+                <nav class="mdl-navigation nav-links">
+                    <a class="mdl-navigation__link" href="index.html">Home</a>
+                    <a class="mdl-navigation__link" href="">About Me</a>
+                    <a class="mdl-navigation__link" href="">Contact Me</a>
+                    <a class="mdl-navigation__link" href="">My Music</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <h1 class="feloy"><a href="index.html">FELOY</a></h1>
-
-    <div class="nav-wrapper">
-        <nav>
-            <a href="index.html"><span class="active">HOME</span></a>
-            <a href="contact_me.html"><span>CONTACT ME</span></a>
-            <a href="about_me.html"><span>ABOUT ME</span></a>
-            <a href="tour_dates.html"><span>TOUR DATES</span></a>
-            <a href="my_music.html"><span>MY MUSIC</span></a>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">FELOY</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html">Home</a>
+            <a class="mdl-navigation__link" href="">About Me</a>
+            <a class="mdl-navigation__link" href="">Contact Me</a>
+            <a class="mdl-navigation__link" href="">My Music</a>
         </nav>
     </div>
+    <div class="splitter"></div>
 
-    <div class="welcome-container">
-        <p class="welcome">Welcome</p>
-        <p class="description">Music isn't just my job; it's my passion</p>
-    </div>
+    <main class="mdl-layout__content">
 
+        <div class="mdl-card mdl-shadow--2dp welcome-card">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Welcome</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+               Music isn't just my job; it's my passion.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#">
+                    About Me
+                </a>
+            </div>
+        </div>
+    </main>
 </div>
 </body>
 </html>
