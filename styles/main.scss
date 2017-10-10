@@ -47,6 +47,7 @@ $light-gray: #989898;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: $med-gray;
     transform: rotate(45deg);
     box-shadow: 2px 2px 4px $med-gray;
     height: 40px;
