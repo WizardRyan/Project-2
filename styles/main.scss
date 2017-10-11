@@ -76,6 +76,10 @@ $light-gray: #989898;
   background: url('../images/crowd.png') center / cover;
 }
 
+.contact-me-body{
+  background: url('../images/board.png') center / cover;
+}
+
 @media(max-width: 1024px){
   .index-body{
     background: url('../images/crowdSmall.png') center / cover;
@@ -88,9 +92,66 @@ $light-gray: #989898;
   justify-content: center;
   height: 100%;
   width: 100%;
+
   .welcome-card{
     height: 35%;
     width: 40%;
+  }
+
+  .contact-me-card{
+    height: 50%;
+    width: 50%;
+
+    @media(max-width: 1024px){
+      height: 80%;
+      width: 80%;
+    }
+
+    .input-form{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mdl-button{
+      position: relative;
+      top: 20px;
+    }
+    .email-input-label{
+      color: $light-gray;
+    }
+
+    .mdl-card__actions{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+
+      .toggle-container{
+        display: flex;
+        font-size: .75em;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+
+        .mdl-switch{
+          flex: 1;
+        }
+
+        .interested{
+          flex: 4;
+        }
+
+        @media(min-width: 1024px){
+          .mld-switch{
+            flex: 1;
+          }
+
+          .interested{
+            flex: 1;
+          }
+        }
+      }
+    }
   }
 
   @media(max-width: 1024px){
@@ -123,6 +184,7 @@ $light-gray: #989898;
     .mdl-card__supporting-text{
       display: flex;
       justify-content: center;
+      line-height: 1.2em;
     }
   }
 }

@@ -51,6 +51,9 @@
 .index-body {
   background: url("../images/crowd.png") center/cover; }
 
+.contact-me-body {
+  background: url("../images/board.png") center/cover; }
+
 @media (max-width: 1024px) {
   .index-body {
     background: url("../images/crowdSmall.png") center/cover; } }
@@ -63,6 +66,40 @@
   .mdl-layout__content .welcome-card {
     height: 35%;
     width: 40%; }
+  .mdl-layout__content .contact-me-card {
+    height: 50%;
+    width: 50%; }
+    @media (max-width: 1024px) {
+      .mdl-layout__content .contact-me-card {
+        height: 80%;
+        width: 80%; } }
+    .mdl-layout__content .contact-me-card .input-form {
+      display: flex;
+      flex-direction: column; }
+    .mdl-layout__content .contact-me-card .mdl-button {
+      position: relative;
+      top: 20px; }
+    .mdl-layout__content .contact-me-card .email-input-label {
+      color: #989898; }
+    .mdl-layout__content .contact-me-card .mdl-card__actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      .mdl-layout__content .contact-me-card .mdl-card__actions .toggle-container {
+        display: flex;
+        font-size: .75em;
+        justify-content: space-between;
+        margin-bottom: 20px; }
+        .mdl-layout__content .contact-me-card .mdl-card__actions .toggle-container .mdl-switch {
+          flex: 1; }
+        .mdl-layout__content .contact-me-card .mdl-card__actions .toggle-container .interested {
+          flex: 4; }
+        @media (min-width: 1024px) {
+          .mdl-layout__content .contact-me-card .mdl-card__actions .toggle-container .mld-switch {
+            flex: 1; }
+          .mdl-layout__content .contact-me-card .mdl-card__actions .toggle-container .interested {
+            flex: 1; } }
   @media (max-width: 1024px) {
     .mdl-layout__content .welcome-card {
       height: 50%;
@@ -83,6 +120,7 @@
       font-size: 2em; }
     .mdl-layout__content .mdl-card .mdl-card__supporting-text {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      line-height: 1.2em; }
 
 /*# sourceMappingURL=main.css.map */

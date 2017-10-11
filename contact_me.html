@@ -9,9 +9,9 @@
     <link href="styles/material.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <script defer src="scripts/material.js"></script>
-    <title>FELOY | HOME</title>
+    <title>FELOY | CONTACT ME</title>
 </head>
-<body class="index-body">
+<body class="contact-me-body">
 <div class="mdl-layout mdl-js-layout">
     <header class="main-header mdl-layout__header mdl-layout__header--transparent mdl-shadow--4dp">
         <div class="mdl-layout__header-row">
@@ -37,18 +37,38 @@
     <div class="splitter"></div>
 
     <main class="mdl-layout__content">
-
-        <div class="mdl-card mdl-shadow--2dp welcome-card">
+        <div class="mdl-card mdl-shadow--2dp contact-me-card">
             <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text">Welcome</h2>
+                <h2 class="mdl-card__title-text">Contact Me</h2>
             </div>
-            <div class="mdl-card__supporting-text">
-               Music isn't just my job; it's my passion.
-            </div>
+
             <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#">
-                    About Me
+                <form action="#" class="input-form">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="email-input">
+                        <label class="mdl-textfield__label email-input-label" for="email-input">Enter Email</label>
+                    </div>
+
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="text-input">
+                        <label class="mdl-textfield__label email-input-label" for="text-input">Enter Message</label>
+                    </div>
+                </form>
+                <div class="toggle-container">
+                    <div class="interested">I am interested in your services: </div>
+                    <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch">
+                        <input type="checkbox" id="switch" class="mdl-switch__input">
+                        <span class="mdl-switch__label"></span>
+                    </label>
+                </div>
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Submit
                 </a>
+            </div>
+            <div class="mdl-card__menu">
+                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">face</i>
+                </button>
             </div>
         </div>
     </main>
