@@ -1,0 +1,11 @@
+$dark-gray: #1D1D1D;
+$med-gray: #434343;
+$light-gray: #989898;
+
+@mixin flex-it($height, $width, $align, $justify){
+  display:flex;
+  height: $height;
+  width: $width;
+  align-items: $align;
+  justify-content: $justify;
+}

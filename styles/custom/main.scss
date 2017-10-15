@@ -1,19 +1,13 @@
-$dark-gray: #1D1D1D;
-$med-gray: #434343;
-$light-gray: #989898;
+@import 'common';
 
 .main-header{
-  background: url('../images/geoSquares.png') center / cover;
+  background: url('../../images/geoSquares.png') center / cover;
   color: white;
 
   .mdl-layout__header-row{
     margin-top: 0px;
     .row-wrapper{
-      display: flex;
-      height: 100%;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
+      @include flex-it(100%, 100%, center, center);
       .mdl-layout-title{
         justify-self: flex-start;
         font-size: 3.5em;
@@ -33,7 +27,6 @@ $light-gray: #989898;
       }
     }
   }
-
 }
 
 .mdl-layout__drawer-button{
@@ -59,12 +52,7 @@ $light-gray: #989898;
       transform: rotate(135deg);
     }
   }
-
-  .index-body{
-    background: url("../images/crowdSmall.png");
-  }
 }
-
 
 .splitter{
   height: 12px;
@@ -73,16 +61,20 @@ $light-gray: #989898;
 }
 
 .index-body{
-  background: url('../images/crowd.png') center / cover;
+  background: url('../../images/crowd.png') center / cover;
 }
 
 .contact-me-body{
-  background: url('../images/board.png') center / cover;
+  background: url('../../images/board.png') center / cover;
+}
+
+.my-music-body{
+  background: url('../../images/blurBoard.png') center / cover;
 }
 
 @media(max-width: 1024px){
   .index-body{
-    background: url('../images/crowdSmall.png') center / cover;
+    background: url('../../images/crowdSmall.png') center / cover;
   }
 }
 
@@ -107,6 +99,29 @@ $light-gray: #989898;
       width: 80%;
     }
 
+    .mdl-card__menu{
+      color: white;
+    }
+
+    .social-media{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-end;
+
+      a{
+        color: white;
+        text-decoration: none;
+      }
+      .split{
+        width: 40px;
+      }
+      .social-title{
+        position: relative;
+        top: 20px;
+      }
+    }
+
     .input-form{
       display: flex;
       flex-direction: column;
@@ -114,6 +129,7 @@ $light-gray: #989898;
 
     .mdl-button{
       position: relative;
+      align-self: flex-start;
       top: 20px;
     }
     .email-input-label{
